@@ -1,0 +1,165 @@
+/*Inicio*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Página general */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f3f4f6;
+  color: #111827;
+
+}
+
+/* Contenedor principal */
+main, .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+/* Título */
+h1, h2 {
+  margin-bottom: 1rem;
+}
+/* Grid de Fotos */
+#Fotos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+/* Tarjeta de Fotos */
+.foto-card {
+  background: #ffffff;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+/* Imagen del foto */
+.foto-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Texto de la Foto */
+.foto-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.foto-card p {
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+/* ===== FORMULARIOS LOGIN / REGISTRO ===== */
+.auth-container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.auth-form {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.auth-form h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2d3748;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #4a5568;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cbd5e0;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #4299e1;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.1);
+}
+
+.auth-toggle {
+  text-align: center;
+  margin-top: 15px;
+  color: #666;
+}
+
+.auth-toggle a {
+  color: #4299e1;
+  text-decoration: none;
+}
+
+.auth-toggle a:hover {
+  text-decoration: underline;
+}
+
+.hidden {
+    display: none; /*oculto si no se dice lo contrario*/
+}
+
+/* ===== HEADER SIMPLE ===== */
+.header {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  color: #667eea;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.logo p {
+  color: #666;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.auth-nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.auth-nav .user-name {
+  color: #4a5568;
+  font-weight: 500;
+}

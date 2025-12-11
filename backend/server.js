@@ -5,6 +5,7 @@ import cors from 'cors';
 
 import pool from './config/db.js';
 import fotosRoutes from './routes/fotos.routes.js';
+import authRoutes from './routes/auth.routes.js';
 
 const app = express();
 
@@ -37,6 +38,7 @@ app.get('/api/probar-bbdd', async (req, res) => {
 
 // Rutas de la API
 app.use('/api/fotos', fotosRoutes);
+app.use('/api/auth', authRoutes);
 
 // Arrancar el servidor
 const PORT = process.env.PORT || 3000;
